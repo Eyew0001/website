@@ -48,8 +48,13 @@
   </div>
 
   <script>
-    $('.loader').fadeOut(400);
-  </script>
+      $(window).on('load',function () {
+        $('.loader').fadeOut();
+        $(' html, body').css({
+          overflow: 'auto'
+        });
+      });
+    </script>
 
   <!--Header bar start-->
   <div class="header-bar">
