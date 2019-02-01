@@ -1,6 +1,7 @@
 html,
 body {
-    overflow-y: hidden;
+    max-width: 100%;
+    overflow-x:hidden;
 }
 
 
