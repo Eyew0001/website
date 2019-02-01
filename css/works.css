@@ -1,0 +1,307 @@
+html,
+body {
+    overflow-y: hidden;
+}
+
+
+/*------------------------------------------------------------------carousel*/
+.slide-show {
+    width: 100vw;
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+}
+
+@media screen and (max-width:420px) {
+    .slide-show {
+        padding: 0px 0px 20px 0px;
+    }
+}
+
+.carousel-inner {
+    height: 70vh;
+    width: 100vw;
+    /*adjust width of carousel*/
+}
+
+@media screen and (max-width:420px) {
+    .carousel-inner {
+        width: 105vw;
+    }
+}
+
+/* make carousel full-width touch the edges */
+.slide-show>.col-md-12 {
+    padding: 0px;
+}
+
+.carousel-slides {
+    height: 100vh;
+}
+
+/*slide images*/
+.img-fluid {
+    -webkit-filter: drop-shadow(-1.2vw 1vw 1vw rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(-1.2vw 1vw 1vw rgba(0, 0, 0, 0.5));
+}
+
+/*right-text*/
+.right-title {
+    position: absolute;
+    left: 55vw;
+    margin-top: -30vh;
+    color: white;
+}
+
+/*left text*/
+.left-title {
+    position: absolute;
+    margin-top: -20vw;
+    color: white;
+}
+
+.left-title>h2 {
+    text-align: right;
+}
+
+.left-title>p {
+    text-align: right;
+}
+
+
+/*-----------------------------------------------first slide*/
+.first-slide {
+    background-color: rgb(218, 145, 136);
+
+}
+
+/* first slide images*/
+.first-slide>.col-md-6>.img-fluid {
+    width: 30vh;
+    margin-top: 4vh;
+}
+
+.first-slide>.col-md-6 {
+    position: relative;
+    margin-left: 23vw;
+}
+
+#watch {
+    position: absolute;
+    top: 15vh;
+    left: 20vh;
+    width: 20vh;
+}
+
+.col-md-5>h2 {
+    font-size: 3em;
+}
+
+.col-md-5>p {
+    font-size: 1.6em;
+    color: #ffffffc7;
+    line-height: 30px;
+    margin-bottom: 25px;
+
+}
+
+
+
+@media screen and (min-height:1024px) and (orientation:portrait),
+screen and (max-width:768px) {
+    .first-slide>.col-md-6 {
+        margin-left: 10vw;
+    }
+
+    .img-fluid {
+        width: 25vh;
+        margin-top: 6vh;
+    }
+
+    #watch {
+        top: 10vh;
+        left: 15vh;
+        width: 20vh;
+    }
+
+    .right-title {
+        left: 52vw;
+    }
+
+
+
+    @media screen and (max-width:98px) {
+        .right-title {
+            left: 40vh;
+        }
+    }
+}
+
+@media screen and (max-width:565px) {
+    .first-slide>.col-md-6 {
+        margin-left: 5vw;
+    }
+
+    .first-slide>.col-md-6>.img-fluid {
+        width: 25vh;
+    }
+
+    #watch {
+        top: 10vh;
+        left: 15vh;
+        width: 20vh;
+    }
+
+    .right-title {
+        left: 20vw;
+        margin-top: 0vh;
+    }
+}
+
+
+
+/*-----------------------------second slide------------*/
+.second-slide {
+    background-color: #DAB188;
+}
+
+.second-slide>.col-md-6>.img-fluid {
+    margin-left: 80%;
+    width: 100vh;
+    margin-top: 7vh;
+}
+
+@media screen and (min-height:1024px) and (orientation:portrait),
+screen and (max-width:768px) {
+    .second-slide>.col-md-6>.img-fluid {
+        margin-top: 20vw;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .second-slide>.col-md-6>.img-fluid {
+        margin-left: -15%;
+        margin-top: 15vh;
+    }
+
+    .second-slide>.col-md-5 {
+        margin-left: -10%;
+        margin-top: 5vh;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.third-slide {
+    background-color: #D5A3BB;
+}
+
+.fourth-slide {
+    background-color: #66A376;
+}
+
+.fifth-slide {
+    background-color: #63b6c9;
+}
+
+.sixth-slide {
+    background-color: aqua;
+}
+
+
+@media screen and (min-height:1024px) and (orientation:portrait),
+screen and (max-width:768px) {
+    .col-md-5>h2 {
+        font-size: 4vh;
+    }
+
+    .col-md-5>p {
+        font-size: 2vh;
+    }
+
+    .col-md-6 {
+        margin-left: 10vw;
+    }
+
+}
+
+/*carousel indicators*/
+.carousel-indicators {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    left: auto;
+    width: auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+@media screen and (max-width:420px) {
+    .carousel-indicators {
+        right: 0%;
+    }
+}
+
+.carousel-indicators li {
+    border-radius: 50px;
+    width: 10px;
+    height: 50%;
+}
+
+/*carousel arrows*/
+.carousel-control-next {
+    top: 90%;
+    margin-right: 25%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 3em;
+}
+
+.carousel-control-prev {
+    top: 90%;
+    margin-left: 25%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 3em;
+}
+
+.fa {
+    color: white;
+}
+
+/*scroll vertically*/
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
