@@ -46,8 +46,11 @@
   </div>
 
   <script>
-    $(window).on('load',function () {
+    $(window).on('load', function () {
       $('.loader').fadeOut();
+      $(' html, body').css({
+        overflow: 'auto'
+      });
     });
   </script>
 

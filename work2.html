@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="./css/work2.css">
 
   <!--JS Files-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
 
   <!--Favicon-->
@@ -46,10 +47,13 @@
   </div>
 
   <script>
-      $(window).on('load',function () {
-        $('.loader').fadeOut();
+    $(window).on('load', function () {
+      $('.loader').fadeOut();
+      $(' html, body').css({
+        overflow: 'auto'
       });
-    </script>
+    });
+  </script>
 
   <!--Header bar start-->
   <div class="header-bar">
@@ -175,7 +179,7 @@
 
 
       <!--Next Work section-->
-      <div class="work-links row">  
+      <div class="work-links row">
         <div class="col-md-6 prev-work">
           <h1>&#10229;Previous work: Smart Triaging</h1>
           <a href="work1.html"><span class="click"></span></a>
