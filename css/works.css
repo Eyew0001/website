@@ -69,6 +69,34 @@ body {
     text-align: right;
 }
 
+/*right image*/
+
+.right-image>.col-md-6>.img-fluid {
+    margin-left: 80%;
+    width: 100vh;
+    margin-top: 7vh;
+}
+
+@media screen and (min-height:1024px) and (orientation:portrait),
+screen and (max-width:768px) {
+    .right-image>.col-md-6>.img-fluid {
+        margin-top: 20vw;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .right-image>.col-md-6>.img-fluid {
+        margin-left: -15%;
+        margin-top: 15vh;
+    }
+
+    .right-image>.col-md-5 {
+        margin-left: -10%;
+        margin-top: 5vh;
+    }
+
+}
+
 
 /*-----------------------------------------------first slide*/
 .first-slide {
@@ -166,26 +194,40 @@ screen and (max-width:768px) {
     background-color: #DAB188;
 }
 
-.second-slide>.col-md-6>.img-fluid {
-    margin-left: 80%;
+
+
+
+
+/*-----------------------------third slide------------*/
+
+.third-slide {
+    background-color: #D5A3BB;
+}
+
+.third-slide>.col-md-6>.img-fluid {
+    margin-left: 20%;
     width: 100vh;
     margin-top: 7vh;
 }
 
 @media screen and (min-height:1024px) and (orientation:portrait),
 screen and (max-width:768px) {
-    .second-slide>.col-md-6>.img-fluid {
+    .third-slide>.col-md-6>.img-fluid {
         margin-top: 20vw;
+        margin-left: 0vw;
+    }
+    .third-slide>.right-title {
+        margin-top: -20vw;
     }
 }
 
 @media screen and (max-width:565px) {
-    .second-slide>.col-md-6>.img-fluid {
+    .third-slide>.col-md-6>.img-fluid {
         margin-left: -15%;
         margin-top: 15vh;
     }
 
-    .second-slide>.col-md-5 {
+    .third-slide>.col-md-5 {
         margin-left: -10%;
         margin-top: 5vh;
     }
@@ -194,17 +236,7 @@ screen and (max-width:768px) {
 
 
 
-
-
-
-
-
-
-
-.third-slide {
-    background-color: #D5A3BB;
-}
-
+/*-----------------------------fourth slide------------*/
 .fourth-slide {
     background-color: #66A376;
 }
