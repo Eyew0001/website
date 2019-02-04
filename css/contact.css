@@ -50,3 +50,13 @@ a:hover:before {
     -webkit-transform: translateY(0px);
     opacity: 0;
 }
+
+.image img{
+    width:15vw;
+    float:right;
+}
+
+.image p {
+    padding-top:5%;
+    float: right;
+}
