@@ -97,6 +97,37 @@ screen and (max-width:768px) {
 
 }
 
+/*left image*/
+.left-image>.col-md-6>.img-fluid {
+    margin-left: 20%;
+    width: 100vh;
+    margin-top: 7vh;
+}
+
+@media screen and (min-height:1024px) and (orientation:portrait),
+screen and (max-width:768px) {
+    .left-image>.col-md-6>.img-fluid {
+        margin-top: 20vw;
+        margin-left: 0vw;
+    }
+    .left-image>.right-title {
+        margin-top: -20vw;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .left-image>.col-md-6>.img-fluid {
+        margin-left: -15%;
+        margin-top: 15vh;
+    }
+
+    .left-image>.col-md-5 {
+        margin-left: -10%;
+        margin-top: 5vh;
+    }
+
+}
+
 
 /*-----------------------------------------------first slide*/
 .first-slide {
@@ -201,52 +232,45 @@ screen and (max-width:768px) {
 /*-----------------------------third slide------------*/
 
 .third-slide {
-    background-color: #D5A3BB;
+    background-color: #E58FB8;
 }
-
-.third-slide>.col-md-6>.img-fluid {
-    margin-left: 20%;
-    width: 100vh;
-    margin-top: 7vh;
-}
-
-@media screen and (min-height:1024px) and (orientation:portrait),
-screen and (max-width:768px) {
-    .third-slide>.col-md-6>.img-fluid {
-        margin-top: 20vw;
-        margin-left: 0vw;
-    }
-    .third-slide>.right-title {
-        margin-top: -20vw;
-    }
-}
-
-@media screen and (max-width:565px) {
-    .third-slide>.col-md-6>.img-fluid {
-        margin-left: -15%;
-        margin-top: 15vh;
-    }
-
-    .third-slide>.col-md-5 {
-        margin-left: -10%;
-        margin-top: 5vh;
-    }
-
-}
-
 
 
 /*-----------------------------fourth slide------------*/
 .fourth-slide {
-    background-color: #66A376;
+    background-color: #5BBF75;
 }
 
+
+/*-----------------------------fifth slide------------*/
 .fifth-slide {
-    background-color: #63b6c9;
+    background-color: #FFBC7A;
+}
+
+.fifth-slide>.col-md-6>.img-fluid {
+width:40vh;
+margin-left:55%;
+}
+
+
+
+@media screen and (max-width: 565px) {
+.fifth-slide>.col-md-6>.img-fluid {
+    width:30vh;
+    margin-left:0;
+    margin-top:0;
+}
+}
+
+@media screen and (min-height: 1024px) and (orientation: portrait), screen and (max-width: 768px) {
+.fifth-slide>.col-md-6>.img-fluid {
+    margin-top: 3vw;
+    margin-left:0;
+}
 }
 
 .sixth-slide {
-    background-color: aqua;
+   background-color: #63b6c9;
 }
 
 

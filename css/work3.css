@@ -1,3 +1,5 @@
+/* row categories centering*/
+
 p, span {
     font-size: 16px;
 }
@@ -7,6 +9,8 @@ p, span {
 .col-md-6 p{
     text-align: center;
 }
+
+
 .col p {
     margin:2% auto auto;
     display: block;
@@ -38,6 +42,15 @@ p, span {
 
 }
 
+.photos {
+    width: 62vw;
+    margin: auto;
+}
+
+.photos > .col-md-6 {
+    float:left;
+}
+
 .work-links {
     margin:auto;
 }
@@ -52,10 +65,10 @@ p, span {
 }
 
 .next-work {
-    background-color: #66A376;
+    background-color: #5BBF75;
 }
 
 .next-work:hover {
-    background-color: #66A376b5;
+    background-color: #5BBF75b5;
     transition-duration: 0.5s;
 }

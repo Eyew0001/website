@@ -37,20 +37,20 @@ p, span {
 }
 
 .prev-work {
-    background-color: #D5A3BB;
+    background-color: #E58FB8;
 }
 
 .prev-work:hover {
-    background-color: #D5A3BBb5;
+    background-color: #E58FB8b5;
     transition-duration: 0.5s;
 }
 
 .next-work {
-    background-color: #63b6c9;
+    background-color: #FFBC7A;
 }
 
 .next-work:hover {
-    background-color: #63b6c9b5;
+    background-color: #FFBC7Ab5;
     transition-duration: 0.5s;
 }
 

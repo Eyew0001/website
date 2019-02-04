@@ -68,11 +68,11 @@ display: block;
 }
 
 .next-work {
-    background-color: #D5A3BB;
+    background-color: #E58FB8;
 }
 
 .next-work:hover {
-    background-color: #d5a3bbd5;
+    background-color: #E58FB8d5;
     transition-duration: 0.5s;
 }
 
