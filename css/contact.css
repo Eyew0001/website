@@ -37,7 +37,7 @@ a:hover:before {
 }
 
 .contents {
-    padding: 10%;
+    padding: 6% 10% 3% 10%;
 }
 
 #header-about {
@@ -60,3 +60,10 @@ a:hover:before {
     padding-top:5%;
     float: right;
 }
+
+li {
+    list-style-type: square;
+}
+ 
+    
+  
