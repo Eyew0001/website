@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-    color: #E9E7DA;
+    color: #f9f7f0;
     text-decoration: none;
     transition-duration: .3s;
 }
@@ -20,7 +20,7 @@ a:before {
     left: -5%;
     width: 110%;
     height: 3px;
-    background-color: #d17b6d;
+    background-color: #E58FB8;
     content: '';
     -webkit-transform: translateY(-10px);
     -webkit-transform: scale(1, 1);
@@ -41,9 +41,9 @@ a:hover:before {
 }
 
 #header-about {
-    background-color: #d17b6d;
+    background-color: #E58FB8;
     padding: 0.3%;
-    color: #E9E7DA;
+    color: #f9f7f0;
 }
 
 #header-about:before {
@@ -65,5 +65,9 @@ li {
     list-style-type: square;
 }
  
+
+.iconify{
+    transform: rotate(90deg)!important;
+}
     
   

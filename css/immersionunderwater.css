@@ -1,0 +1,53 @@
+
+
+.image {
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.image img {
+    width:60vw;
+    margin: auto;
+    display: block;
+}
+
+
+.video {
+    width:60vw;
+    margin: auto;
+    margin-top:2%;
+    margin-bottom:2%;
+    display: block;
+
+}
+
+.photos {
+    width: 70vw;
+    margin: auto;
+    background-color: #E58FB8;
+}
+
+.photos > .col-md-6 {
+    float:left;
+
+}
+
+.photos > .col-md-6 p {
+    margin-top:0.5vw;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.photos > .col-md-6 > h5 {
+    text-align: center;
+}
+
+.caption {
+    text-align: center;
+}
+.work-links {
+    margin:auto;
+}
+
+
+

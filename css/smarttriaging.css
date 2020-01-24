@@ -1,0 +1,106 @@
+iframe {
+    margin-bottom: 5vh;
+}
+
+.container img {
+    -webkit-box-shadow: 6px 7px 21px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 6px 7px 21px 0px rgba(0, 0, 0, 0.56);
+    border-radius: 3px;
+}
+
+.noshadow {
+    text-align: center;
+    border-radius: 3px;
+
+
+}
+
+.noshadow img {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.56);
+    width: 40vw;
+}
+
+.smartwatch img {
+    width: 20vh;
+}
+
+.img2 {
+    float: right;
+    margin: 1vw 0;
+}
+
+.video {
+    z-index: -1;
+}
+
+.concept-animation {
+    width: 100%;
+    -webkit-box-shadow: 6px 7px 21px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 6px 7px 21px 0px rgba(0, 0, 0, 0.56);
+    margin-bottom: 2vw;
+}
+
+.mobile img {
+    width: 20vh;
+}
+
+.video-indiv {
+    width: 30vh;
+}
+
+.smartwatchvid {
+    width: 40vh;
+}
+
+@media screen and (min-width:768px) and (min-height:1000px) and (orientation: portrait) {
+    .smartwatch img {
+        width: 15vw;
+    }
+
+    .video-indiv {
+        width: 25vw;
+    }
+
+    .mobile img {
+        width: 15vw;
+    }
+
+    .noshadow img {
+        width: 30vh;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .noshadow img {
+        width: 30vh;
+    }
+}
+
+span {
+    text-align: center;
+}
+
+.screens img {
+    width: 65vw;
+    float: right;
+}
+
+.invision {
+    float: right;
+    padding: 0;
+}
+
+.invision-frame {
+    height: 900px;
+    transform: scale(0.7);
+}
+
+@media screen and (max-width:425px) {
+    .invision-frame {
+        transform: scale(0.5);
+        margin-top: -50%;
+        margin-bottom: -50%;
+    }
+}
