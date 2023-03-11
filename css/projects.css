@@ -29,7 +29,7 @@ span {
     text-align: center;
     margin: auto;
     display: block;
-    margin-top: -5px;
+    margin-top: 0px;
 }
 
 img {
@@ -49,6 +49,17 @@ img {
     margin: auto;
     margin-bottom: 5%;
     display: block;
+}
+
+.modal-dialog {
+    max-width:60%;
+}
+
+@media screen and (max-width:425px) {
+    .modal-dialog {
+        margin-top:50%;
+        max-width:100%;
+    }
 }
 
 /* cognito */
@@ -80,9 +91,16 @@ img {
     border-radius: 3px;
 }
 
+#smartwatchvid {
+    margin-top:20%;
+}
+
 @media screen and (max-width:768px) and (min-width:426px) {
     .col-sm-4 img {
         width: 80%;
+    }
+    #smartwatchvid {
+        margin-top: 80%;
     }
 }
 
@@ -90,11 +108,12 @@ img {
     .col-sm-4 img {
         width: 40%;
     }
-}
-
-@media screen and (max-width:425px) {
     .triagevideo {
         width: 80%;
+        margin-left:10%;
+    }
+    #smartwatchvid {
+        margin-top: 1%;
     }
 }
 
@@ -116,6 +135,9 @@ img {
     }
 }
 
+.concept-animation {
+    margin-bottom: 5px;
+}
 .screens img {
     width: 70%;
 }
@@ -210,6 +232,16 @@ img {
     width: 70%;
 }
 
+.photos {
+    width: 70vw;
+    margin: auto;
+    background-color: #E58FB8;
+}
+
+.photos > .col-md-6 {
+    float:left;
+
+}
 
 /* row images */
 .image {

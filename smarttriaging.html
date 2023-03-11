@@ -41,8 +41,8 @@
 
 </head>
 
-<body style="overflow: auto" id="cont">
-  <!-- Loader
+<body id="cont">
+<!---Loader-->
   <div class="loader">
     <img class="loading" src="img/common/loading.gif" />
   </div>
@@ -54,7 +54,13 @@
         overflow: 'auto'
       });
     });
-  </script> -->
+    $(function () {
+      $('.pop').on('click', function () {
+        $('.imagepreview').attr('src', $(this).attr('src'));
+        $('#imagemodal').modal('show');
+      });
+    });
+  </script> 
 
   <!--Header bar start-->
   <div class="header-bar">
@@ -130,7 +136,7 @@
       </div>
 
       <div class="col-sm-4 video demovid">
-        <video class="triagevideo video" playsinline autoplay muted loop
+        <video id="smartwatchvid" class="triagevideo video" playsinline autoplay muted loop
           src="img/smarttriaging/smartwatch-screencap.mp4"></video>
         <div class="caption text-center">
           Call an ambulance for triaged injuries and track its live status</div>
@@ -143,9 +149,8 @@
       </div>
 
 
-      <div class="col-md-12 embed-responsive embed-responsive-16by9">
-        <video class="concept-animation" playsinline autoplay muted loop
-          src="img/smarttriaging/concept-animation.mp4"></video>
+      <div class="col-md-12 concept-animation embed-responsive embed-responsive-16by9">
+        <video playsinline autoplay muted loop src="img/smarttriaging/concept-animation.mp4"></video>
       </div>
 
       <div class="col-sm-4 mobile">
@@ -157,14 +162,14 @@
       <div class="col-sm-4 video demovid">
         <video class="triagevideo video" playsinline autoplay muted loop
           src="img/smarttriaging/mobile-screencap.mp4"></video>
-          <div class="caption text-center">Manage
-            account information
-            from the mobile application</div>
+        <div class="caption text-center">Manage
+          account information
+          from the mobile application</div>
       </div>
       <div class="col-sm-4 d-none d-sm-block mobile">
         <img class="image img-fluid" src="img/smarttriaging/onboarding-screen2.png" />
       </div>
-    
+
 
       <div class="col-md-12">
         <p>Allowing personalised use and ease of access, a smartwatch interface was designed for triaging
@@ -173,29 +178,41 @@
           account via a
           mobile application, information that is also accessible via the smartwatch application.</p>
       </div>
+
+      <div class="col-md-12 screens">
+        <img class="pop image img-fluid" src="img/smarttriaging/smartwatch-screens.png" />
+      </div>
+      <div class="caption text-center">Ability to cancel the
+        ambulance</div>
+
+      <div class="col-md-12 screens">
+        <img class="pop image img-fluid" src="img/smarttriaging/mobile-screens.png" />
+      </div>
+      <div class="caption text-center">Sync and manage medical
+        history</div>
+
+
+      <div class="col-md-12">
+        <img class="image img-fluid" src="img/smarttriaging/screens.png" />
+      </div>
+
+      <div class="col-md-12">
+        <img class="image img-fluid" src="img/smarttriaging/prototype-image.png" />
+      </div>
+
+      <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                  class="sr-only">Close</span></button>
+              <img src="" class="imagepreview" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="col-md-12 screens">
-      <img class="image img-fluid" src="img/smarttriaging/smartwatch-screens.png" />
-    </div>
-    <div class="caption text-center">Ability to cancel the
-      ambulance</div>
-
-    <div class="col-md-12 screens">
-      <img class="image img-fluid" src="img/smarttriaging/mobile-screens.png" />
-    </div>
-    <div class="caption text-center">Sync and manage medical
-      history</div>
-
-
-    <div class="col-md-12">
-      <img class="image img-fluid" src="img/smarttriaging/screens.png" />
-    </div>
-
-    <div class="col-md-12">
-      <img class="image img-fluid" src="img/smarttriaging/prototype-image.png" />
-    </div>
-
     <!----- invision over quota
     <div class="invision col-md-6">
       <iframe class="invision-frame" width="100%" src="https://invis.io/YEOPLM3MNSD" frameborder="0"

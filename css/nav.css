@@ -38,7 +38,7 @@
   }
 }
 
-#header-about {
+#header-about, #header-about-active {
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
     float:right;
@@ -46,6 +46,11 @@
     margin-right:0%;
 }
 
+#header-about-active {
+  background-color: #E58FB8;
+  padding: 0.3%;
+  color: #f9f7f0;
+}
 
 .header-bar a {
     text-decoration: none;
@@ -64,7 +69,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #ff8ecf;
+    background-color: #E58FB8;
     content: '';
     -webkit-transform: translateY(8px);
     opacity: 0;

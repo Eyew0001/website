@@ -21,7 +21,6 @@
   <!-- Custom CSS File -->
   <link rel="stylesheet" href="./css/custom.css">
   <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/immersionunderwater.css">
   <link rel="stylesheet" href="./css/projects.css">
 
   <!--JS Files-->
@@ -45,7 +44,7 @@
 <body id="cont">
   <!--Loader-->
   <div class="loader">
-    <img class="loading" src="img/common/loading.gif" />
+    <img class="pop loading" src="img/common/loading.gif" />
   </div>
 
   <script>
@@ -53,6 +52,12 @@
       $('.loader').fadeOut();
       $(' html, body').css({
         overflow: 'auto'
+      });
+    });
+    $(function () {
+      $('.pop').on('click', function () {
+        $('.imagepreview').attr('src', $(this).attr('src'));
+        $('#imagemodal').modal('show');
       });
     });
   </script>
@@ -131,7 +136,7 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/immersion/generative1.png" alt="First slide">
+            <img class="pop d-block w-100" src="img/immersion/generative1.png" alt="First slide">
             <div class="carousel-caption">
               <h5>Axes Framework Collage</h5>
               <p>Participants choose words and pictures that represent
@@ -139,7 +144,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/generative2.png" alt="Second slide">
+            <img class="pop d-block w-100" src="img/immersion/generative2.png" alt="Second slide">
             <div class="carousel-caption">
               <h5>Generative Passing</h5>
               <p>Participants take their problems regarding aquariums and
@@ -147,7 +152,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/generative3.png" alt="Third slide">
+            <img class="pop d-block w-100" src="img/immersion/generative3.png" alt="Third slide">
             <div class="carousel-caption">
               <h5>Emotional Timeline</h5>
               <p>Participants watch a 360 degree video of a visit to the aquarium and draw and write on a timeline their
@@ -170,30 +175,30 @@
         <h5>Sensitising Booklet</h5>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/immersion/sensitising1.jpg" alt="First slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising1.jpg" alt="First slide">
 
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/sensitising2.jpg" alt="Second slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising2.jpg" alt="Second slide">
 
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/sensitising3.jpg" alt="Third slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising3.jpg" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/sensitising4.jpg" alt="Fourth slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising4.jpg" alt="Fourth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/sensitising5.jpg" alt="Fifth slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising5.jpg" alt="Fifth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/sensitising6.jpg" alt="Sixth slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising6.jpg" alt="Sixth slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/sensitising7.jpg" alt="Seventh slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising7.jpg" alt="Seventh slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/immersion/sensitising8.jpg" alt="Eighth slide">
+            <img class="pop d-block w-100" src="img/immersion/sensitising8.jpg" alt="Eighth slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -211,7 +216,7 @@
 
       <div id="researchVisual" class="col-md-12 align-self-start image">
         <h5>Research Visualisation</h5>
-        <img src="img/immersion/visual.jpg" />
+        <img class="pop" src="img/immersion/visual.jpg" />
         <p class="caption">Design credits: Soomin Lee</p>
       </div>
 
@@ -221,21 +226,32 @@
         <h4>Concept Ideation</h4>
       </div>
       <div class="col-md-12 photos">
-        <img class="col-md-6 align-self-start image" src="img/immersion/storyboard1.jpg" />
-        <img class="col-md-6 align-self-start image" src="img/immersion/storyboard2.png" />
+        <img class="pop col-md-6 align-self-start image" src="img/immersion/storyboard1.jpg" />
+        <img class="pop col-md-6 align-self-start image" src="img/immersion/storyboard2.png" />
       </div>
-
-
 
       <div class="col-md-12 align-self-start">
         <h4>Prototypic Experience</h4>
         <h5>User Journey Map</h5>
-        <img src="img/immersion/journey-map.jpg" />
+        <img class="pop" src="img/immersion/journey-map.jpg" />
       </div>
 
       <div class="col-md-12 align-self-center">
         <h5>Video Prototype</h5>
         <video class="video" playsinline controls src="img/immersion/immersion-underwater-prototype-video.mp4"></video>
+      </div>
+
+      <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                  class="sr-only">Close</span></button>
+              <img src="" class="imagepreview" style="width: 100%;">
+            </div>
+          </div>
+        </div>
       </div>
 
       <!----- End main project content ----->

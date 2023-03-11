@@ -112,7 +112,7 @@ a {
 	padding-top: 20px;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:425px) {
 	.master-heading {
 		padding-top: 10px;
 	}
@@ -140,8 +140,17 @@ a {
 	width: 30%;
 }
 
+@media screen and (max-width:420px) {
+	.loading {
+		margin-left:5%;
+		margin-top: 80%;
+		width:90%;
+	}
+	
+}
+
 /*next work section*/
-.work-links>.col-md-6 {
+/* .work-links>.col-md-6 {
 	text-align: center;
 }
 
@@ -156,4 +165,7 @@ a .click {
 	height: 100%;
 	top: 0;
 	left: 0;
-}
+} */
+
+
+  
