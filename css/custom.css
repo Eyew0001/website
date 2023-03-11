@@ -41,12 +41,10 @@ h1 {
 	color: #525c72;
 	font-weight: 800;
 	text-align: center;
-	margin-top: -1%;
 }
 
 .master-heading>.col-md-12>h1 {
 	text-align: center;
-	margin-top: -1%;
 }
 
 h2 {
@@ -76,6 +74,7 @@ h5 {
 	margin-top:10px;
 	color: #658da7;
 	letter-spacing: -0.5px;
+	text-align: center;
 }
 
 h6 {

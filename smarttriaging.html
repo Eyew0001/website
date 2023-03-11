@@ -21,7 +21,6 @@
   <!-- Custom CSS File -->
   <link rel="stylesheet" href="./css/custom.css">
   <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/smarttriaging.css">
   <link rel="stylesheet" href="./css/projects.css">
 
   <!--JS Files-->
@@ -114,48 +113,58 @@
     </div>
 
     <div class="row">
-      <iframe width=100% height="540" allowfullscreen="allowfullscreen" src="https://youtube.com/embed/xI1wRZ_RX2Y">
-      </iframe>
-
-      <div class="col align-self-start smartwatch">
-        <img src="img/smarttriaging/major.png" />
-        <div class="caption center-block">Major Injury Detection Screen</div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width=100% allowfullscreen="allowfullscreen" src="https://youtube.com/embed/xI1wRZ_RX2Y">
+        </iframe>
       </div>
 
-      <div class="col align-self-center video">
-        <video class="video-indiv smartwatchvid" playsinline autoplay muted loop height="600"
+      <div class="col-sm-4 smartwatch">
+        <img class="image img-fluid shadow" src="img/smarttriaging/major.png" />
+        <div class="caption text-center">Major Injury Detection Screen</div>
+      </div>
+
+      <div class="col-sm-4 smartwatch d-sm-none">
+        <img class="image img-fluid shadow" src="img/smarttriaging/arrival.png" />
+        <div class="caption text-center">Ambulance
+          Tracking Screen</div>
+      </div>
+
+      <div class="col-sm-4 video demovid">
+        <video class="triagevideo video" playsinline autoplay muted loop
           src="img/smarttriaging/smartwatch-screencap.mp4"></video>
-        <div style="margin-bottom:10vh; text-align: center;" class="caption center-block">
+        <div class="caption text-center">
           Call an ambulance for triaged injuries and track its live status</div>
       </div>
 
-      <div class="col align-self-end smartwatch">
-        <img class="img2" src="img/smarttriaging/arrival.png" />
-        <div style="text-align: center; margin-left: 40%; margin-bottom:10px;" class="caption center-block">Ambulance
+      <div class="col-sm-4 smartwatch d-none d-sm-block" id="smartwatch2">
+        <img class="image img-fluid shadow" src="img/smarttriaging/arrival.png" />
+        <div class="caption text-center">Ambulance
           Tracking Screen</div>
       </div>
 
 
-      <div class="col-md-12">
+      <div class="col-md-12 embed-responsive embed-responsive-16by9">
         <video class="concept-animation" playsinline autoplay muted loop
           src="img/smarttriaging/concept-animation.mp4"></video>
       </div>
 
-      <div class="col align-self-start mobile">
-        <img src="img/smarttriaging/onboarding-screen1.png" />
+      <div class="col-sm-4 mobile">
+        <img class="image img-fluid" src="img/smarttriaging/onboarding-screen1.png" />
       </div>
-
-      <div class="col align-self-center video">
-        <video class="video-indiv" playsinline autoplay muted loop height="600"
+      <div class="col-sm-4 d-sm-none">
+        <img class="image img-fluid" src="img/smarttriaging/onboarding-screen2.png" />
+      </div>
+      <div class="col-sm-4 video demovid">
+        <video class="triagevideo video" playsinline autoplay muted loop
           src="img/smarttriaging/mobile-screencap.mp4"></video>
+          <div class="caption text-center">Manage
+            account information
+            from the mobile application</div>
       </div>
-      <div class="col align-self-end mobile">
-        <img class="img2" src="img/smarttriaging/onboarding-screen2.png" />
-
+      <div class="col-sm-4 d-none d-sm-block mobile">
+        <img class="image img-fluid" src="img/smarttriaging/onboarding-screen2.png" />
       </div>
-      <div style="text-align: center;margin-left: 32%; margin-bottom:10vh;" class="caption center-block">Manage
-        account information
-        from the mobile application</div>
+    
 
       <div class="col-md-12">
         <p>Allowing personalised use and ease of access, a smartwatch interface was designed for triaging
@@ -166,27 +175,28 @@
       </div>
     </div>
 
-    <div class="noshadow col-md-12">
-      <img src="img/smarttriaging/smartwatch-screens.png" />
+    <div class="col-md-12 screens">
+      <img class="image img-fluid" src="img/smarttriaging/smartwatch-screens.png" />
     </div>
-    <div style="text-align: center;margin-bottom:10vh;" class="caption center-block">Ability to cancel the
+    <div class="caption text-center">Ability to cancel the
       ambulance</div>
 
-    <div class="noshadow col-md-12">
-      <img src="img/smarttriaging/mobile-screens.png" />
+    <div class="col-md-12 screens">
+      <img class="image img-fluid" src="img/smarttriaging/mobile-screens.png" />
     </div>
-    <div style="text-align: center;margin-bottom:10vh;" class="caption center-block">Sync and manage medical
+    <div class="caption text-center">Sync and manage medical
       history</div>
 
 
-    <div class="col-md-12 screens">
-      <img style=" margin-bottom:5vh" src="img/smarttriaging/screens.png" />
+    <div class="col-md-12">
+      <img class="image img-fluid" src="img/smarttriaging/screens.png" />
     </div>
 
-    <div class="col-md-12 screens">
-      <img src="img/smarttriaging/prototype-image.png" />
+    <div class="col-md-12">
+      <img class="image img-fluid" src="img/smarttriaging/prototype-image.png" />
     </div>
 
+    <!----- invision over quota
     <div class="invision col-md-6">
       <iframe class="invision-frame" width="100%" src="https://invis.io/YEOPLM3MNSD" frameborder="0"
         allowfullscreen></iframe>
@@ -195,15 +205,16 @@
       <iframe class="invision-frame" width="100%" src="https://invis.io/FEOPLMLK2HD" frameborder="0"
         allowfullscreen></iframe>
     </div>
+    ----->
     <!----- End main project content ----->
 
 
     <!--Next Work section-->
-    <div class="col-md-12 row next-work">
+    <!-- <div class="col-md-12 row next-work">
       <h1>Neo Kinesis <span class="iconify" data-icon="ic:round-arrow-drop-down-circle" data-inline="false"></span>
         <a href="neokinesis.html"><span class="click"></span></a>
       </h1>
-    </div>
+    </div> -->
 
   </div>
   <!----End Container-->

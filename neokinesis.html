@@ -21,7 +21,6 @@
   <!-- Custom CSS File -->
   <link rel="stylesheet" href="./css/custom.css">
   <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/neokinesis.css">
   <link rel="stylesheet" href="./css/projects.css">
 
   <!--JS Files-->
@@ -117,74 +116,97 @@
     <!--End row categories-->
 
     <div class="row">
-
+      <div class="embed-responsive embed-responsive-16by9">
       <iframe width=100% height="540" allowfullscreen="allowfullscreen" src="https://youtube.com/embed/cmpTciNWsEQ">
       </iframe>
+      </div>
 
-      <div class="col align-self-start image">
+      <div class="col-md-6 image">
         <img src="img/neokinesis/neo_kinesis_1.jpg" />
       </div>
-      <div class="col align-self-start image">
+      <div class="col-md-6 image">
         <img src="img/neokinesis/neo_kinesis_2.jpg" />
       </div>
 
-      <div class="col align-self-center">
+      <div class="col-sm-4 d-none d-sm-block">
         <video class="video" playsinline autoplay muted loop src="img/neokinesis/style1.mp4"></video>
       </div>
-      <div class="col align-self-center">
+      <div class="col-sm-4 d-none d-sm-block">
         <video class="video" playsinline autoplay muted loop src="img/neokinesis/style2.mp4"></video>
       </div>
-      <div class="col align-self-center">
+      <div class="col-sm-4 d-none d-sm-block">
         <video class="video" playsinline autoplay muted loop src="img/neokinesis/style3.mp4"></video>
       </div>
-      <div class="col-md-11 caption">
-        <p>3 possible visual pattern effects assigned to players at random.</p>
+
+      <div id="carouselExampleIndicatorsNeo" class="carousel slide d-sm-none" data-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="video" playsinline autoplay muted loop src="img/neokinesis/style1.mp4" alt="First Slide"></video>
+          </div>
+          <div class="carousel-item">
+            <video class="video" playsinline autoplay muted loop src="img/neokinesis/style2.mp4" alt="Second Slide"></video>
+          </div>
+          <div class="carousel-item">
+            <video class="video" playsinline autoplay muted loop src="img/neokinesis/style3.mp4"alt="Third Slide"></video>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicatorsNeo" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicatorsNeo" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="col-md-12 caption">
+        <p class="text-center">3 possible visual pattern effects assigned to players at random.</p>
       </div>
 
 
-
-      <div class="col align-self-center">
+      <div class="col-md-12">
         <video class="video heart" playsinline autoplay muted loop src="img/neokinesis/clap.mp4"></video>
-        <p style="text-align: center; margin-bottom: 2%;">A heart effect will appear when players clap their hands,
+        <p class="text-center">A heart effect will appear when players clap their hands,
           increasing the Likes counter in the top left corner
           with every clap.</p>
       </div>
-      <div class="col align-self-start image">
+      <div id="neoClap" class="col-md-12 image">
         <img src="img/neokinesis/clapping.jpg" />
       </div>
 
-      <div class="col align-self-start image">
+      <div class="col-sm-6 image">
         <img src="img/neokinesis/inactive.png" />
-        <p style="text-align: center;">If no pedestrians are presently playing, a countdown will fill the screen
+        <p class="text-center">If no pedestrians are presently playing, a countdown will fill the screen
           displaying the time left until the
           light turns green.</p>
       </div>
-      <div class="col align-self-start image">
+      <div class="col-sm-6 image">
         <img src="img/neokinesis/active.png" />
-        <p style="text-align: center;">If pedestrians are playing, a countdown in the top right corner is present to
+        <p class="text-center">If pedestrians are playing, a countdown in the top right corner is present to
           inform them of the time until
           the light turns green.</p>
       </div>
-      <div class="col align-self-center">
-        <video class="video heart" playsinline autoplay muted loop src="img/neokinesis/greenman.mp4"></video>
-        <p style="text-align: center; margin-bottom: 2%;">When the light has turned green, pedestrians are informed it
+      <div class="col-sm-6" id="greenman">
+        <video class="video" playsinline autoplay muted loop src="img/neokinesis/greenman.mp4"></video>
+        <p class="text-center">When the light has turned green, pedestrians are informed it
           is time to cross while interactions are
           temporarily disabled.</p>
       </div>
 
-      <div class="col align-self-start image">
+      <div class="col-md-12 image">
         <img src="img/neokinesis/gradshow_3.jpg" />
         <p style="text-align: center;">The team.</p>
       </div>
       <!----- End main project content ----->
 
       <!--Next Work section-->
-      <div class="col-md-12 next-work">
+      <!--<div class="col-md-12 next-work">
         <h1>An Immersion Underwater <span class="iconify" data-icon="ic:round-arrow-drop-down-circle"
             data-inline="false"></span>
           <a href="immersionunderwater.html"><span class="click"></span></a>
         </h1>
-      </div>
+      </div> -->
 
     </div>
     <!----End Row-->

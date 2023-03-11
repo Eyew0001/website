@@ -5,6 +5,12 @@ body {
     overflow-x: hidden;
 }
 
+@media only screen and (max-width:425px) {
+    h1 {
+        margin-top: 10px;
+        font-size: 3.5em;
+    }
+}
 
 /*------------------------------------------------------------------carousel*/
 .slide-show {
@@ -13,9 +19,10 @@ body {
     padding: 0px;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:425px) {
     .slide-show {
         padding: 0px 0px 20px 0px;
+        margin-top: 30px;
     }
 }
 
@@ -25,7 +32,7 @@ body {
     /*adjust width of carousel*/
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:425px) {
     .carousel-inner {
         width: 105vw;
     }
@@ -50,11 +57,18 @@ body {
     position: relative;
 }
 
-.col-md-4 .text h3 {
+@media screen and (max-width:425px) {
+    .col-md-4 {
+        padding-left: 0px;
+    }
+}
+
+
+h3 {
     display: block;
     /*makes text centered*/
     position: absolute;
-    bottom: 35%;
+    bottom: 200px;
     width: 95%;
 
 }
@@ -63,6 +77,17 @@ body {
     margin-top: 10%;
 }
 
+@media screen and (max-width:425px) {
+    .col-md-4>img {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width:1025px) and (min-width:426px) {
+    .col-md-4>img {
+        margin-top: 30%;
+    }
+}
 
 /* hover effects */
 
@@ -95,13 +120,30 @@ body {
     color: #f9f7f0;
 }
 
-.childText, .childText h3 {
+.childText,
+.childText h3 {
     transition: 0.5s ease-in-out;
-    display: block;
+
     /*makes text centered*/
-    position: absolute;
+
     bottom: 35%;
-    width: 100%;
+
+}
+
+@media screen and (max-width:425px) {
+
+    .childText,
+    .childText h3 {
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width:769px) and (min-width:426px) {
+
+    .childText,
+    .childText h3 {
+        bottom: 50%;
+    }
 }
 
 
@@ -123,6 +165,10 @@ body {
     background-color: #ff84ce;
 }
 
+.work4 img {
+    width: 80%;
+}
+
 .work5 {
     background-color: #77d7e7;
 }
@@ -141,6 +187,34 @@ body {
     margin-top: 15%;
     margin-left: -10%;
     width: 90%;
+}
+
+@media only screen and (max-width: 425px) {
+    #cognito {
+        width: 80%;
+        margin-left: auto;
+        margin-top: 10%;
+    }
+
+    #house {
+        margin-bottom: -23%;
+        margin-left: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1025px) and (min-width:426px) {
+    #cognito {
+        width: 70%;
+        margin-left: 100px;
+        margin-top: 10%;
+    }
+
+    #house {
+        margin-bottom: -18%;
+        margin-left: auto;
+        width: 100%;
+    }
 }
 
 #neo {

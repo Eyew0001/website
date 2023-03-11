@@ -20,11 +20,22 @@
 }
 
 #header-title {
-    margin-left: 0%;
+    margin-left: -30px;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 1em;
+}
+@media screen and (max-width:768px) and (min-width:426px) {
+  #header-title  {
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #header-title  {
+    margin-left: -5px;
+  }
 }
 
 #header-about {
