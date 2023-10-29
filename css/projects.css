@@ -198,6 +198,7 @@ img {
     right: 0px;
     position: relative;
     height:150px;
+    margin-bottom: -50px;
 }
 
 .carousel-caption h5 {
@@ -226,7 +227,10 @@ img {
 
 
 #conceptIdeation {
-    margin-bottom:-5px;
+    margin-bottom:0px;
+}
+#storyboards {
+    margin-bottom:20px;
 }
 
 #researchVisual img {
@@ -254,36 +258,6 @@ img {
     width: 100%;
     margin: auto;
     display: block;
-}
-
-
-
-.next-work:hover {
-    background-color: #E58FB8d5;
-    transition-duration: 0.5s;
-}
-
-.next-work:hover h1 {
-    transition-duration: 0.5s;
-    color: #f9f7f0;
-}
-
-
-.next-work {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0px;
-    width: 100%;
-    height: 80px;
-    background-color: #E58FB8;
-    transition-duration: 0.5s;
-}
-
-.next-work h1 {
-    margin-bottom: 0px;
-    transition-duration: 0.5s;
-    width: 100%;
-    margin-top: 15px;
 }
 
 
@@ -352,7 +326,7 @@ img {
     left: -5%;
     width: 110%;
     height: 3px;
-    background-color: #E58FB8;
+    background-color: #FA8E73;
     content: '';
     -webkit-transform: translateY(-10px);
     -webkit-transform: scale(1, 1);

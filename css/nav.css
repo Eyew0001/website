@@ -47,7 +47,7 @@
 }
 
 #header-about-active {
-  background-color: #E58FB8;
+  background-color: #FA8E73;
   padding: 0.3%;
   color: #f9f7f0;
 }
@@ -69,7 +69,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #E58FB8;
+    background-color: #FA8E73;
     content: '';
     -webkit-transform: translateY(8px);
     opacity: 0;
