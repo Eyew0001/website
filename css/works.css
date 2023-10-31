@@ -15,6 +15,7 @@ body {
 .categories {
     width: 100vw;
     text-align: center;
+    z-index: 1;
 }
 
 /* Sub-Title */
@@ -80,12 +81,6 @@ body {
 /*--------- Works Grid --------*/
 .works {
     margin-top:8vw;
-}
-
-@media screen and (max-width:425px) {
-    .works {
-        z-index: -1;
-    }
 }
 
 .grid-container {
